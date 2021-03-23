@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:background="#00000000"
+            android:scaleX=".66"
+            android:scaleY=".66"
+            app:srcCompat="@drawable/question2" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="279dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:src="@mipmap/ic_launcher_round"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/textForce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Shake Sensitivity: 0"
+            android:textAlignment="center"
+            android:textColorHighlight="#3F51B5"
+            android:textColorLink="#2196F3"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20"
+            android:min="5"
+            android:progress="5"
+            android:progressTint="@color/teal_700"
+            android:thumbTint="@color/teal_700"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Idle Time Max (seconds): 0"
+            android:textAlignment="center"
+            android:textColorHighlight="#3F51B5"
+            android:textColorLink="#2196F3"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="90"
+            android:min="2"
+            android:progress="2"
+            android:progressTint="@color/teal_700"
+            android:thumbTint="@color/teal_700"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/sessionShakes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:shadowColor="#FFFFFF"
+            android:text="Total Session Shakes: 0"
+            android:textAlignment="center"
+            android:textColorHighlight="#3F51B5"
+            android:textColorLink="#2196F3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sessionTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="40sp"
+            android:shadowColor="#FFFFFF"
+            android:text="Total Session Time: 0"
+            android:textAlignment="center"
+            android:textColorHighlight="#3F51B5"
+            android:textColorLink="#2196F3"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/start_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#2196F3"
+                android:text="Start Service"
+                android:textColor="@color/white"
+                android:textColorHighlight="#3F51B5"
+                android:textColorLink="#2196F3" />
+
+            <Button
+                android:id="@+id/stop_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="stop Service"
+                android:textColor="@color/white"
+                android:textColorHighlight="#3F51B5"
+                android:textColorLink="#2196F3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textInfoStart"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5sp"
+            android:background="@null"
+            android:ems="10"
+            android:text="To start, Tap 'START!',  Tap 'CAST' to choose TV/Device, and EXIT"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textInfoStop"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="5sp"
+            android:background="@null"
+            android:ems="10"
+            android:text="Tap 'Stop Service' and 'EXIT' when you are done"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#2196F3"
+                android:text="CAST"
+                android:textColor="@color/black"
+                android:textColorHighlight="#3F51B5"
+                android:textColorLink="#2196F3" />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="EXIT"
+                android:textColor="@color/black"
+                android:textColorHighlight="#3F51B5"
+                android:textColorLink="#2196F3" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:text="DEMOO™ - www.googlee.com"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
